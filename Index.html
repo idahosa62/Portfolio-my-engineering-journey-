@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Engineering Portfolio | Idahosa Elisha Maake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eng: {
+                            dark: '#0f172a',
+                            light: '#f1f5f9',
+                            accent: '#0ea5e9',
+                            secondary: '#64748b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-eng-light text-slate-800 font-sans antialiased selection:bg-eng-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-eng-accent font-bold text-xl tracking-tighter">Idahosa Elisha Maake</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-eng-accent transition px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#roadmap" class="text-gray-300 hover:text-eng-accent transition px-3 py-2 text-sm font-medium">My Roadmap</a>
+                    <a href="#projects" class="text-gray-300 hover:text-eng-accent transition px-3 py-2 text-sm font-medium">Projects</a>
+                    <a href="#blog" class="text-gray-300 hover:text-eng-accent transition px-3 py-2 text-sm font-medium">Articles</a>
+                    <a href="#contact" class="bg-eng-accent text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-sky-600 transition">Hire Me</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-eng-dark border-b border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#roadmap" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My Roadmap</a>
+                <a href="#projects" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#contact" class="text-eng-accent hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-eng-dark pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    <span class="block">Mechanical Engineering</span>
+                    <span class="block text-eng-accent mt-2">Design, Automation & Analysis</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-400 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Based in Phalaborwa. Specialising in CAD, Python automation, and Thermal Systems. 
+                    Documenting my journey to master modern engineering tools.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+                    <div class="rounded-md shadow">
+                        <a href="#projects" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-eng-accent hover:bg-sky-600 md:py-4 md:text-lg transition">
+                            View Portfolio
+                        </a>
+                    </div>
+                    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                        <a href="https://linkedin.com" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-gray-600 text-base font-medium rounded-md text-gray-200 bg-transparent hover:bg-gray-800 md:py-4 md:text-lg transition">
+                            <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+            <div class="absolute -top-24 -left-24 w-96 h-96 bg-eng-accent rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 right-0 w-64 h-64 bg-purple-600 rounded-full blur-3xl"></div>
+        </div>
+    </section>
+
+    <!-- The Roadmap Section (Current Focus) -->
+    <section id="roadmap" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-eng-accent font-semibold tracking-wide uppercase">My Current Focus</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+                    Engineering Development Roadmap
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    A dedicated six-month timeline to integrate coding and simulation into traditional mechanical workflows.
+                </p>
+            </div>
+
+            <div class="mt-12 relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-200"></div>
+
+                <div class="space-y-12">
+                    <!-- Item 1 -->
+                    <div class="relative md:flex items-center justify-between">
+                        <div class="md:w-5/12 text-right pr-8 hidden md:block">
+                            <h3 class="text-xl font-bold text-slate-800">Foundation & Python</h3>
+                            <p class="text-gray-600 mt-2">Setting up digital infrastructure and mastering Python syntax for engineering data analysis.</p>
+                            <span class="inline-block mt-2 px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Dec 2025</span>
+                        </div>
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-eng-accent border-4 border-white shadow"></div>
+                        <div class="md:w-5/12 pl-8 md:pl-8">
+                            <div class="md:hidden mb-2">
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Dec 2025</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1">Foundation & Python</h3>
+                            </div>
+                            <p class="text-gray-600 md:hidden">Setting up infrastructure and mastering Python syntax.</p>
+                            <ul class="list-disc ml-5 text-sm text-gray-500 mt-2">
+                                <li>Launch Portfolio Website</li>
+                                <li>Python Basics (Loops, Functions)</li>
+                                <li>Thermodynamics Review</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative md:flex items-center justify-between flex-row-reverse">
+                        <div class="md:w-5/12 text-left pl-8 hidden md:block">
+                            <h3 class="text-xl font-bold text-slate-800">Design & Simulation</h3>
+                            <p class="text-gray-600 mt-2">Advanced SolidWorks modelling and introduction to Computational Fluid Dynamics (CFD).</p>
+                            <span class="inline-block mt-2 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Jan - Feb 2026</span>
+                        </div>
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 border-4 border-white shadow"></div>
+                        <div class="md:w-5/12 pl-8 md:pr-8 md:pl-0 md:text-right">
+                             <div class="md:hidden mb-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">Jan - Feb 2026</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1">Design & Simulation</h3>
+                            </div>
+                            <p class="text-gray-600 md:hidden">Advanced SolidWorks & CFD.</p>
+                            <ul class="list-disc ml-5 md:mr-5 md:ml-0 text-sm text-gray-500 mt-2 inline-block text-left md:text-right">
+                                <li>Complex Assembly Modelling</li>
+                                <li>CFD Pump Simulation</li>
+                                <li>CSWP Preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                     <!-- Item 3 -->
+                    <div class="relative md:flex items-center justify-between">
+                        <div class="md:w-5/12 text-right pr-8 hidden md:block">
+                            <h3 class="text-xl font-bold text-slate-800">Automation & Integration</h3>
+                            <p class="text-gray-600 mt-2">Combining mechanical knowledge with AI tools and JavaScript for smarter systems.</p>
+                            <span class="inline-block mt-2 px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">Mar - Apr 2026</span>
+                        </div>
+                        <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 border-4 border-white shadow"></div>
+                        <div class="md:w-5/12 pl-8 md:pl-8">
+                             <div class="md:hidden mb-2">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold">Mar - Apr 2026</span>
+                                <h3 class="text-xl font-bold text-slate-800 mt-1">Automation & Integration</h3>
+                            </div>
+                            <p class="text-gray-600 md:hidden">AI Tools & JavaScript integration.</p>
+                            <ul class="list-disc ml-5 text-sm text-gray-500 mt-2">
+                                <li>Data Analysis with Pandas</li>
+                                <li>Predictive Maintenance Logic</li>
+                                <li>Mining Industry Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-eng-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">Technical Projects</h2>
+                <p class="mt-4 text-gray-500">Applying theory to practical scenarios.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i data-lucide="settings" class="w-16 h-16 text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-eng-accent uppercase tracking-wider">SolidWorks</span>
+                            <span class="text-xs text-gray-500">Jan 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Centrifugal Slurry Pump</h3>
+                        <p class="text-gray-600 text-sm mb-4 text-justify">
+                            A detailed 3D assembly of a slurry pump commonly used in Phalaborwa mining operations. Includes exploded views and BOM.
+                        </p>
+                        <a href="#" class="text-eng-accent font-medium hover:text-sky-700 text-sm flex items-center">
+                            View Model <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i data-lucide="code-2" class="w-16 h-16 text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-eng-accent uppercase tracking-wider">Python</span>
+                            <span class="text-xs text-gray-500">Dec 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Steam Table Automator</h3>
+                        <p class="text-gray-600 text-sm mb-4 text-justify">
+                            A Python script utilizing the `pyXSteam` library to automatically calculate enthalpy and entropy based on input pressure and temperature.
+                        </p>
+                        <a href="#" class="text-eng-accent font-medium hover:text-sky-700 text-sm flex items-center">
+                            View Code <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i data-lucide="wind" class="w-16 h-16 text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold text-eng-accent uppercase tracking-wider">CFD / MATLAB</span>
+                            <span class="text-xs text-gray-500">Upcoming</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Heat Exchanger Analysis</h3>
+                        <p class="text-gray-600 text-sm mb-4 text-justify">
+                            Simulation of a shell-and-tube heat exchanger to optimise flow rates for maximum thermal efficiency.
+                        </p>
+                        <span class="text-gray-400 text-sm italic">Coming May 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">Industry Insights</h2>
+                <p class="mt-4 text-gray-500">Articles on Mining, Manufacturing, and Future Tech.</p>
+            </div>
+            
+            <div class="space-y-8 max-w-3xl mx-auto">
+                <!-- Article 1 -->
+                <article class="flex flex-col md:flex-row gap-6 items-start border-b border-gray-100 pb-8">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-slate-900 hover:text-eng-accent cursor-pointer">
+                            The Impact of Predictive Maintenance on Crusher Efficiency
+                        </h3>
+                        <div class="flex items-center gap-4 text-sm text-gray-400 my-2">
+                            <span><i data-lucide="calendar" class="w-3 h-3 inline mr-1"></i> Dec 15, 2025</span>
+                            <span><i data-lucide="tag" class="w-3 h-3 inline mr-1"></i> Mining</span>
+                        </div>
+                        <p class="text-gray-600 text-sm text-justify">
+                            Exploring how vibration analysis and Python-based data logging can prevent catastrophic failures in primary gyratory crushers used in Limpopo's copper mines.
+                        </p>
+                        <a href="#" class="inline-block mt-3 text-eng-accent text-sm font-semibold hover:underline">Read Article</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="flex flex-col md:flex-row gap-6 items-start border-b border-gray-100 pb-8">
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-slate-900 hover:text-eng-accent cursor-pointer">
+                            Thermal Systems: Why Rankine Cycles Matter in 2026
+                        </h3>
+                         <div class="flex items-center gap-4 text-sm text-gray-400 my-2">
+                            <span><i data-lucide="calendar" class="w-3 h-3 inline mr-1"></i> Jan 10, 2026</span>
+                            <span><i data-lucide="tag" class="w-3 h-3 inline mr-1"></i> Thermodynamics</span>
+                        </div>
+                        <p class="text-gray-600 text-sm text-justify">
+                            A revisiting of core thermal concepts and their application in modern waste-heat recovery systems in manufacturing plants.
+                        </p>
+                        <a href="#" class="inline-block mt-3 text-eng-accent text-sm font-semibold hover:underline">Read Article</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills/Stack -->
+    <section class="py-12 bg-eng-dark border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-6">Technologies I am Learning</p>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Icons/Text for stack -->
+                <div class="flex items-center gap-2 text-white font-bold text-xl"><i data-lucide="box" class="text-eng-accent"></i> SolidWorks</div>
+                <div class="flex items-center gap-2 text-white font-bold text-xl"><i data-lucide="terminal" class="text-yellow-400"></i> Python</div>
+                <div class="flex items-center gap-2 text-white font-bold text-xl"><i data-lucide="wind" class="text-blue-400"></i> ANSYS</div>
+                <div class="flex items-center gap-2 text-white font-bold text-xl"><i data-lucide="cpu" class="text-green-400"></i> MATLAB</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-eng-light rounded-xl p-8 shadow-sm border border-gray-200">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900">Get In Touch</h2>
+                    <p class="text-gray-600 mt-2">Available for freelance CAD work, tutoring, or technical collaboration.</p>
+                </div>
+                <form onsubmit="event.preventDefault(); alert('Message sent! (This is a demo)');" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-eng-accent focus:ring-eng-accent bg-white p-2 border" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-eng-accent focus:ring-eng-accent bg-white p-2 border" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-eng-accent focus:ring-eng-accent bg-white p-2 border" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-eng-accent text-white py-2 px-4 rounded-md hover:bg-sky-600 transition font-medium">Send Message</button>
+                </form>
+                <div class="mt-6 text-center text-sm text-gray-500">
+                    <p>Based in Phalaborwa, Limpopo, South Africa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-eng-dark py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <p>&copy; 2025 Idahosa Elisha Maake. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition">GitHub</a>
+                <a href="#" class="hover:text-white transition">LinkedIn</a>
+                <a href="#" class="hover:text-white transition">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
